@@ -4,6 +4,32 @@
   
     
     <entry>
+      <title>win下tensorflow-gpu安装(tf2.5+CUDA11.2+cuDNN8.1.1)</title>
+      <link href="/2022/12/31/tensorflow-install/"/>
+      <url>/2022/12/31/tensorflow-install/</url>
+      
+        <content type="html"><![CDATA[<h3 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h3><p><strong>windows，anaconda，pycharm, python3.7</strong></p><p>显卡3070ti laptop</p><h3 id="一、版本对应关系"><a href="#一、版本对应关系" class="headerlink" title="一、版本对应关系"></a>一、版本对应关系</h3><p>一定要先根据自己电脑的显卡、显卡驱动版本、python版本、tensorflow版本，去匹配对应的CUDA和cuDNN版本。各版本并非完全唯一对应，而是有一定的范围区间。官网上的对应关系图如下：按照这个来没错</p><p><img src="https://s1.ax1x.com/2022/12/31/pS9yPHA.png" alt="tf"></p><h3 id="二、安装步骤"><a href="#二、安装步骤" class="headerlink" title="二、安装步骤"></a>二、安装步骤</h3><h4 id="1-首先，查看自己电脑显卡所能支持的最高CUDA版本"><a href="#1-首先，查看自己电脑显卡所能支持的最高CUDA版本" class="headerlink" title="1.首先，查看自己电脑显卡所能支持的最高CUDA版本"></a>1.首先，查看自己电脑显卡所能支持的最高CUDA版本</h4><p>（1）cmd输入nividia-smi</p><p>如下图所示，涂黄色部分就表明电脑显卡所能支持的最高CUDA版本，你安装的CUDA版本不能高于此</p><p><img src="https://s1.ax1x.com/2022/12/31/pS9yZ38.png"></p><p>（2）右键桌面栏右下角的nvidia图标，点击NVIDIA控制面板</p><p>进入界面后点击左下角系统信息，再在系统信息页面点击组件一栏，如下图所示： 3D设置第三行NVCUDA64.DLL的产品名称中的CUDA版本就表明你电脑显卡所能支持的最高CUDA版本。</p><p><img src="https://s1.ax1x.com/2022/12/31/pS9ytvF.png"></p><h4 id="2-安装对应版本CUDA和cudnn（以CUDA11-2-cuDNN8-1-1为例）"><a href="#2-安装对应版本CUDA和cudnn（以CUDA11-2-cuDNN8-1-1为例）" class="headerlink" title="2.安装对应版本CUDA和cudnn（以CUDA11.2+cuDNN8.1.1为例）"></a>2.安装对应版本CUDA和cudnn（以CUDA11.2+cuDNN8.1.1为例）</h4><p><strong>（1）CUDA</strong></p><p>下载地址：<a href="https://developer.nvidia.com/cuda-toolkit-archive">https://developer.nvidia.com/cuda-toolkit-archive</a></p><p>进入页面，选择你所需版本CUDA 一般来说xx.x.非0好一点</p><p><img src="https://s1.ax1x.com/2022/12/31/pS9yT8f.png"></p><p>依次选择 WINDOWS、x86_64、10、exe(local)</p><p><img src="https://s1.ax1x.com/2022/12/31/pS9yLrQ.png"></p><p>点击下载即可，文件大概2-3G。</p><p>点击刚才下载的CUDA安装包，管理员身份运行，点击”OK”</p><p>一路继续，然后选择”自定义安装”，当前版本比新版本高的就不要打勾！</p><p><img src="https://s1.ax1x.com/2022/12/31/pS96iMF.png"></p><p>点击”下一步” ，一路继续，选择安装位置默认的就行，有三个路径可以截图。</p><p>一路下一步，安装完成。</p><p><strong>验证是否安装成功：</strong></p><p>打开CMD输入： nvcc -V </p><p>下图为成功图片</p><p><img src="https://s1.ax1x.com/2022/12/31/pS968Zd.png"></p><p>安装成功后，环境变量里面系统自动添加CUDA_PATH和CUDA_PATH_V11_2路径，这样就可以运行了，更完美可以按下列步骤补全环境变量。</p><p>配置环境变量</p><p>1、确认系统变量中：CUDA_PATH和CUDA_PATH_V11.2已经存在</p><p>2、我们还需要在环境变量中添加如下几个变量：</p><p>CUDA_SDK_PATH &#x3D; C:\ProgramData\NVIDIA Corporation\CUDA Samples\v11.2</p><p>CUDA_SDK_BIN_PATH &#x3D; %CUDA_SDK_PATH%\bin\win64</p><p>CUDA_SDK_LIB_PATH &#x3D; %CUDA_SDK_PATH%\common\lib\x64</p><p><strong>（2）cudnn</strong></p><p>cudnn需要注册英伟达账户才能下载，但是也不费事，一个邮箱的问题。</p><p>从官网<a href="https://developer.nvidia.com/rdp/cudnn-archive%E4%B8%8B%E8%BD%BD%E5%AF%B9%E5%BA%94%E7%89%88%E6%9C%AC%E7%9A%84cudnn">https://developer.nvidia.com/rdp/cudnn-archive下载对应版本的cudnn</a></p><p><img src="https://s1.ax1x.com/2022/12/31/pS96yon.png"></p><p>找对应版本的cudnn 下载。</p><p>！！！</p><p>解压后，把里面cudnn中的的<strong>include，lib，bin</strong>文件夹里面的所有文件分别的、对应的、<strong>复制到</strong></p><p>C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2文件<strong>对应的include，lib，bin文件里面</strong>！这样才可以GPU加速！</p><p>！！！</p><p><img src="https://s1.ax1x.com/2022/12/31/pS96hyF.png"></p><p>至此，CUDA和cudnn 安装结束。</p><h4 id="3-安装对应版本tensorflow-gpu-2-5为例"><a href="#3-安装对应版本tensorflow-gpu-2-5为例" class="headerlink" title="3.安装对应版本tensorflow-gpu(2.5为例)"></a>3.安装对应版本tensorflow-gpu(2.5为例)</h4><p>执行命令：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install tensorflow-gpu==2.5</span><br></pre></td></tr></table></figure><p>如果速度慢可以加上 -i 镜像源</p><p>安装完成后</p><p>输入pip list： 可以看到安装的tensorflow-gpu&#x3D;&#x3D;2.5.3</p><p><img src="https://s1.ax1x.com/2022/12/31/pS9cPYt.png"></p><p>至此，安装结束，tensorflow-gpu环境搭建完成。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>pip配置国内源</title>
+      <link href="/2022/12/31/Pip/"/>
+      <url>/2022/12/31/Pip/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>pip默认都是从国外的数据源下载，因此有时候会面临下载速度慢，甚至无法下载。因此，需要一个国内源来下载，速度会快很多，国内源有时候也会抽风，一个镜像源不行就换另一个源，不要在一棵树上吊死。按经验来说，国内一般pip install比conda install要快和稳定，即使conda换了镜像源。推荐使用一次性使用，不设置永久，万一那天某个镜像源抽风还要改配置文件。</p><h2 id="常用国内源"><a href="#常用国内源" class="headerlink" title="常用国内源"></a>常用国内源</h2><p><strong>清华大学</strong>  <code>https://pypi.tuna.tsinghua.edu.cn/simple</code></p><p><strong>中国科技大学</strong> <code>https://pypi.mirrors.ustc.edu.cn/simple/</code></p><p><strong>阿里云</strong> <code>http://mirrors.aliyun.com/pypi/simple/</code></p><p><strong>豆瓣</strong> <code>http://pypi.douban.com/simple/</code></p><h3 id="一次性使用"><a href="#一次性使用" class="headerlink" title="一次性使用"></a>一次性使用</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install xxx -i http://pypi.douban.com/simple/ </span><br></pre></td></tr></table></figure><p>提示不信任则使用：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pip install xxx -i http://pypi.douban.com/simple/ --trusted-host pypi.douban.com </span><br></pre></td></tr></table></figure><p>再有问题就更新pip安装版本：</p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">python -m pip install --upgrade pip</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>基于CLIP（对比图文预训练方法）实现以文本精准搜图</title>
       <link href="/2022/12/30/txt2img/"/>
       <url>/2022/12/30/txt2img/</url>
