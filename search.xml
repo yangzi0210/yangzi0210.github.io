@@ -50,6 +50,8 @@
           
           <category> 深度学习环境配置 </category>
           
+          <category> pytorch-gpu-install </category>
+          
       </categories>
       
       
@@ -78,6 +80,8 @@
       <categories>
           
           <category> 深度学习环境配置 </category>
+          
+          <category> tensorflow-gpu-install </category>
           
       </categories>
       
@@ -109,6 +113,8 @@
       <categories>
           
           <category> 深度学习环境配置 </category>
+          
+          <category> pip镜像源 </category>
           
       </categories>
       
