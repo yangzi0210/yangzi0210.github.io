@@ -4,6 +4,37 @@
   
     
     <entry>
+      <title>最新JetBrains全家桶教育认证免费使用</title>
+      <link href="/2023/01/06/jetbrains-install-free/"/>
+      <url>/2023/01/06/jetbrains-install-free/</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="\css\APlayer.min.css"><script src="\js\APlayer.min.js" class="aplayer-secondary-script-marker"></script><script class="meting-secondary-script-marker" src="\js\Meting.min.js"></script><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>前段时间大学生电子邮件地址一键认证通过已经被BAN了，不能以这种方式免费使用JetBrains全家桶了，但是通过官方文件申请审核还是可以的。</p><h3 id="教育认证步骤"><a href="#教育认证步骤" class="headerlink" title="教育认证步骤"></a>教育认证步骤</h3><h4 id="进入官网教育认证界面"><a href="#进入官网教育认证界面" class="headerlink" title="进入官网教育认证界面"></a>进入官网教育认证界面</h4><p>链接地址：<a href="https://www.jetbrains.com/zh-cn/community/education/#students">https://www.jetbrains.com/zh-cn/community/education/#students</a></p><p>进入界面后如下图所示：</p><p><img src="https://img-blog.csdnimg.cn/751f6d8f894b4d4ba941351180f277a7.png" alt="在这里插入图片描述"></p><p>我们需要选择官方文件认证，步骤依次如下：</p><p><img src="https://img-blog.csdnimg.cn/d7e791474e2847899659e842885ed015.png" alt="在这里插入图片描述"></p><img src="https://img-blog.csdnimg.cn/a7915aee36a84712a0ae5a43a250ccb0.png" alt="在这里插入图片描述" style="zoom:80%;" />学术机构写你的大学<p>学术机构网站写你的大学网站</p><p>其他的就正常填写</p><h4 id="去学信网下载学籍报告"><a href="#去学信网下载学籍报告" class="headerlink" title="去学信网下载学籍报告"></a>去学信网下载学籍报告</h4><p>学信网地址：<a href="https://www.chsi.com.cn/">https://www.chsi.com.cn/</a></p><p>然后把在线验证码复制黏贴好、流程如下图所示：</p><p><img src="https://img-blog.csdnimg.cn/41bfb85c54b7439896f230250f811234.png" alt="在这里插入图片描述"></p><p><img src="https://img-blog.csdnimg.cn/2f1a56aa543247b7ab699339ebfbb8e2.png" alt="在这里插入图片描述"></p><p>点击查看能看到你的验证报告，下载下来，然后就填写完毕了。</p><h4 id="成功认证免费使用结果"><a href="#成功认证免费使用结果" class="headerlink" title="成功认证免费使用结果"></a>成功认证免费使用结果</h4><p>等大概两天会收到邮箱通知，内容如下：</p><p><img src="https://img-blog.csdnimg.cn/bb2c5c0b075646b3a6c6c9371ffa92fc.png" alt="在这里插入图片描述"></p><p>到此，认证成功完成，你就可以免费用JetBrains全家桶了！应该是一两年免费，到期了再认证就行！</p><hr><p>如果你感觉读后有收获，可以点击下方打赏请作者喝杯咖啡。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教育认证免费用JetBrains全家桶 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JetBrains </tag>
+            
+            <tag> CLion </tag>
+            
+            <tag> IDEA </tag>
+            
+            <tag> Pycharm </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>离线中英文文字图像匹配度检测软件（基于CLIP、Transformers等实现）</title>
       <link href="/2023/01/02/text4image/"/>
       <url>/2023/01/02/text4image/</url>
