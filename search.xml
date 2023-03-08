@@ -20,13 +20,13 @@
       
         <tags>
             
-            <tag> Pyqt5 </tag>
-            
             <tag> 语音识别 </tag>
             
             <tag> 声纹识别 </tag>
             
             <tag> python </tag>
+            
+            <tag> Pyqt5 </tag>
             
         </tags>
       
@@ -140,15 +140,15 @@
       
         <tags>
             
+            <tag> Pyqt5 </tag>
+            
+            <tag> Pytorch </tag>
+            
             <tag> CLIP </tag>
             
             <tag> Transformers </tag>
             
             <tag> Python </tag>
-            
-            <tag> Pytorch </tag>
-            
-            <tag> Pyqt5 </tag>
             
         </tags>
       
@@ -175,9 +175,9 @@
       
         <tags>
             
-            <tag> GPU </tag>
-            
             <tag> Pytorch </tag>
+            
+            <tag> GPU </tag>
             
             <tag> Windows </tag>
             
@@ -206,9 +206,9 @@
       
         <tags>
             
-            <tag> tensorflow </tag>
-            
             <tag> GPU </tag>
+            
+            <tag> tensorflow </tag>
             
             <tag> CUDA </tag>
             
@@ -268,13 +268,13 @@
       
         <tags>
             
-            <tag> CLIP </tag>
-            
-            <tag> Python </tag>
+            <tag> Pyqt5 </tag>
             
             <tag> Pytorch </tag>
             
-            <tag> Pyqt5 </tag>
+            <tag> CLIP </tag>
+            
+            <tag> Python </tag>
             
             <tag> 爬虫 </tag>
             
