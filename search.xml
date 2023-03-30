@@ -233,13 +233,13 @@
             
             <tag> Pyqt5 </tag>
             
-            <tag> Pytorch </tag>
-            
             <tag> CLIP </tag>
+            
+            <tag> Transformers </tag>
             
             <tag> Python </tag>
             
-            <tag> Transformers </tag>
+            <tag> Pytorch </tag>
             
         </tags>
       
@@ -266,9 +266,9 @@
       
         <tags>
             
-            <tag> Pytorch </tag>
-            
             <tag> GPU </tag>
+            
+            <tag> Pytorch </tag>
             
             <tag> Windows </tag>
             
@@ -297,9 +297,9 @@
       
         <tags>
             
-            <tag> GPU </tag>
-            
             <tag> tensorflow </tag>
+            
+            <tag> GPU </tag>
             
             <tag> CUDA </tag>
             
@@ -361,11 +361,11 @@
             
             <tag> Pyqt5 </tag>
             
-            <tag> Pytorch </tag>
-            
             <tag> CLIP </tag>
             
             <tag> Python </tag>
+            
+            <tag> Pytorch </tag>
             
             <tag> 爬虫 </tag>
             
