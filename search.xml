@@ -4,6 +4,41 @@
   
     
     <entry>
+      <title>关于最近</title>
+      <link href="/2023/05/07/nowadays/"/>
+      <url>/2023/05/07/nowadays/</url>
+      
+        <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>最近一段时间在互联网实习，感受到大厂的技术还是比较先进的，福利待遇也不错，工作强度高。</p><h2 id="目标："><a href="#目标：" class="headerlink" title="目标："></a>目标：</h2><ul><li><p>完成实习期间 mentor 的开发需求</p></li><li><p>达到熟悉基本技术栈Umi、Antd、Antd Pro、Dva、（Redux）、Typescript 的程度</p></li><li><p>基于上述技术栈做一个项目</p></li></ul><h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>在此过程中的各种收获、或者踩坑等总结会放在个人CSDN、Github上</p><p>CSDN：<a href="https://blog.csdn.net/Constantiny">https://blog.csdn.net/Constantiny</a></p><p>Github：<a href="https://github.com/yangzi0210">https://github.com/yangzi0210</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> intern </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> React </tag>
+            
+            <tag> Typescript </tag>
+            
+            <tag> Umi </tag>
+            
+            <tag> Antd </tag>
+            
+            <tag> Antd pro </tag>
+            
+            <tag> Dva </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript声明提升问题</title>
       <link href="/2023/03/27/javascript-var/"/>
       <url>/2023/03/27/javascript-var/</url>
